@@ -54,12 +54,25 @@
 
 // console.log(string.slice(stringSplitter(string,' ',0)[0],stringSplitter(string,' ',0)[1]))
 
-function factorial(num){
-  if(num === 0){
-    return 1;
+// function factorial(num){
+//   if(num === 0){
+//     return 1;
+//   }
+
+//   return num * factorial(num -1);
+// }
+
+// console.log(factorial(5));
+
+function fibonacci(length){
+  if(length === 1){
+    return [1];
   }
 
-  return num * factorial(num -1);
+  let arr = fibonacci(length -1);
+  console.log(arr);
+  arr.push(arr[arr.length -1] + arr[arr.length -2] || 1);
+  return arr;
 }
 
-console.log(factorial(5));
+console.log(fibonacci(7));
