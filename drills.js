@@ -179,16 +179,25 @@ const employees =[
 // sheepCoutIt(3);
 
 
-const array2 = [1,2,3]
-function doubleArray(array){
-  array.forEach(number => {
-    console.log(number*2)
-  });
+// const array2 = [1,2,3]
+// function doubleArray(array){
+//   array.forEach(number => {
+//     console.log(number*2)
+//   });
+// }
+
+// doubleArray(array2)
+
+function stringReverse(string){
+  let newString = [];
+  for(let i=0; i<string.length; i++){
+    newString.push(string.charAt(i));
+  }
+
+  console.log(newString.reverse().join(''));
 }
 
-doubleArray(array2)
-
-
+stringReverse('hello');
 
 
 
