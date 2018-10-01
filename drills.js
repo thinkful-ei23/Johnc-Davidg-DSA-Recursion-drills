@@ -21,12 +21,22 @@
 
 // console.log(arrayDouble([2,3,4]));
 
-function reverseString(string){
-  if(string === ''){
-    return ''
+// function reverseString(string){
+//   if(string === ''){
+//     return ''
+//   }
+//   let newStr = string[string.length-1]
+//   return newStr + reverseString(string.slice(0,-1))
+// }
+
+// console.log(reverseString('hello'))
+
+function nthTriangleNum(num){
+  if(num === 0){
+    return 0;
   }
-  let newStr = string[string.length-1]
-  return newStr + reverseString(string.slice(0,-1))
+
+  return num + nthTriangleNum(num -1);
 }
 
-console.log(reverseString('hello'))
+console.log(nthTriangleNum(4));
