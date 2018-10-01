@@ -41,15 +41,25 @@
 
 // console.log(nthTriangleNum(4));
 
-function stringSplitter(string,seperator,start){
-  if(start > 4){
-    return '';
+// function stringSplitter(string,seperator,start){
+//   if(start > 4){
+//     return '';
+//   }
+//     const seperatorIndex = string.indexOf(seperator,start) 
+//     return [seperatorIndex,...stringSplitter(string,seperator,seperatorIndex+1)]
+
+//   }
+
+// const string ='the brown fox bal1 bal2 bal3'
+
+// console.log(string.slice(stringSplitter(string,' ',0)[0],stringSplitter(string,' ',0)[1]))
+
+function factorial(num){
+  if(num === 0){
+    return 1;
   }
-    const seperatorIndex = string.indexOf(seperator,start) 
-    return [seperatorIndex,...stringSplitter(string,seperator,seperatorIndex+1)]
 
-  }
+  return num * factorial(num -1);
+}
 
-const string ='the brown fox bal1 bal2 bal3'
-
-console.log(string.slice(stringSplitter(string,' ',0)[0],stringSplitter(string,' ',0)[1]))
+console.log(factorial(5));
