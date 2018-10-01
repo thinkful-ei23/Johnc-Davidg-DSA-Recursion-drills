@@ -188,16 +188,23 @@ const employees =[
 
 // doubleArray(array2)
 
-function stringReverse(string){
-  let newString = [];
-  for(let i=0; i<string.length; i++){
-    newString.push(string.charAt(i));
-  }
+// function stringReverse(string){
+//   let newString = [];
+//   for(let i=0; i<string.length; i++){
+//     newString.push(string.charAt(i));
+//   }
 
-  console.log(newString.reverse().join(''));
+//   console.log(newString.reverse().join(''));
+// }
+
+// stringReverse('hello');
+
+function nnthTriangleNum(num){
+  let newNum =0
+  for(let i = num; i>0; i--){
+  newNum +=  i
+  }
+  console.log(newNum)
 }
 
-stringReverse('hello');
-
-
-
+nnthTriangleNum(5);
