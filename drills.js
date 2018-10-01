@@ -170,19 +170,23 @@ const employees =[
 // console.log(traversal(employees,null))
 
 
-function sheepCoutIt(sheep){
-  for(let i=sheep; i>0; i--){
-    console.log(`${i} - Another sheep jumps over the fence`);
-  }
+// function sheepCoutIt(sheep){
+//   for(let i=sheep; i>0; i--){
+//     console.log(`${i} - Another sheep jumps over the fence`);
+//   }
+// }
+
+// sheepCoutIt(3);
+
+
+const array2 = [1,2,3]
+function doubleArray(array){
+  array.forEach(number => {
+    console.log(number*2)
+  });
 }
 
-sheepCoutIt(3);
-
-
-
-
-
-
+doubleArray(array2)
 
 
 
