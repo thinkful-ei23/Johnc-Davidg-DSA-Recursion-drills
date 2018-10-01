@@ -31,12 +31,25 @@
 
 // console.log(reverseString('hello'))
 
-function nthTriangleNum(num){
-  if(num === 0){
-    return 0;
+// function nthTriangleNum(num){
+//   if(num === 0){
+//     return 0;
+//   }
+
+//   return num + nthTriangleNum(num -1);
+// }
+
+// console.log(nthTriangleNum(4));
+
+function stringSplitter(string,seperator,start){
+  if(start > 4){
+    return '';
+  }
+    const seperatorIndex = string.indexOf(seperator,start) 
+    return [seperatorIndex,...stringSplitter(string,seperator,seperatorIndex+1)]
+
   }
 
-  return num + nthTriangleNum(num -1);
-}
+const string ='the brown fox bal1 bal2 bal3'
 
-console.log(nthTriangleNum(4));
+console.log(string.slice(stringSplitter(string,' ',0)[0],stringSplitter(string,' ',0)[1]))
