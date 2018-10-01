@@ -160,17 +160,23 @@ const employees =[
   {id:'Wes',boss:'Kelley'},
 ]
 
-function traversal(hierarchy, boss) {
-  let node = {};
-  hierarchy.filter(item => item.boss === boss)
-                .forEach(item => node[item.id] = traversal(hierarchy, item.id));
-  return node;  
+// function traversal(hierarchy, boss) {
+//   let node = {};
+//   hierarchy.filter(item => item.boss === boss)
+//                 .forEach(item => node[item.id] = traversal(hierarchy, item.id));
+//   return node;  
+// }
+
+// console.log(traversal(employees,null))
+
+
+function sheepCoutIt(sheep){
+  for(let i=sheep; i>0; i--){
+    console.log(`${i} - Another sheep jumps over the fence`);
+  }
 }
 
-console.log(traversal(employees,null))
-
-
-
+sheepCoutIt(3);
 
 
 
